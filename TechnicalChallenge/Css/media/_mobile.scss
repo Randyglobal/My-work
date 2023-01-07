@@ -1,0 +1,187 @@
+main {
+    @include leftRightElements (100%, 90vh, white);
+
+    section {
+        .contentDiv {
+            @include leftRightElements (100%, 30vh, white);
+            display: block;
+
+            .leftDiv {
+                @include leftRightElements (100%, inherit, white);
+                margin-top: 100px;
+
+                h1 {
+                    // align-items: center;
+                    font-weight: $heading_font-weight;
+                    font-family: $paragraph_font-family;
+                    font-size: 35px;
+                    text-align: center;
+                    width: 100%;
+                    line-height: 30px;
+                    color: $heading_color;
+                }
+
+                p {
+                    text-align: center;
+                    font-family: $paragraph_font-family;
+                    font-weight: $firstParagraph_font-weight;
+                    width: 100%;
+                    font-size: 20px;
+                    color: $firstText_color;
+                    margin-left: 0px;
+                }
+
+                #para{
+                    margin-top: 30px
+                }
+            }
+
+            .rightDiv {
+                @include leftRightElements (100%, inherit, white);
+
+                .starElements {
+                    @include leftRightElements (90%, 33px, $starDiv_color);
+                    border-radius: 4px;
+                    margin-top: 20px;
+                    align-items: center;
+                    padding: 10px;
+                    // margin-left: 20px;
+                    
+                    i {
+                        margin-top: 5px;
+                        color: $star_color;
+                    }
+
+                    // #star{
+                    //     margin-left: 20px;
+                    // }
+                    span {
+                        font-family: $paragraph_font-family;
+                        margin-left: 20px;
+                        color: $firstText_color;
+                        font-weight: 600;
+                        font-size: 15px;
+
+                    }
+
+                }
+
+                #starElementsOne {
+                    margin-top: 60px;
+                    margin-left: 10px;
+                }
+
+                #starElementsTwo {
+                    margin-left: 10px;
+                }
+
+                #starElementsThree {
+                    margin-left: 10px;
+                }
+
+            }
+        }
+    }
+
+    section {
+        .profileDiv {
+            @include leftRightElements (100%, 45vh, white);
+            display: block;
+            align-items: center;
+            margin-left: 0px;
+            font-family: $paragraph_font-family;
+
+            .profileBox {
+                @include leftRightElements (330px, 200px, $underDiv_color);
+                border-radius: 8px;
+
+                .profileName {
+                    width: 80%;
+                    height: 20px;
+                    margin: 20px auto;
+                    display: flex;
+
+                    // justify-content: space-evenly;
+
+                    .profilePic {
+                        width: 30px;
+                        height: 30px;
+                        border: 2px solid black;
+                        border-radius: 50%;
+                    }
+
+                    .names {
+                        font-size: 20px;
+                        margin-left: 15px;
+                        line-height: 19px;
+                        margin-top: 20px;
+
+
+
+                        .verified {
+                            color: $h6_color;
+                        }
+
+                        .name {
+                            color: $paragraph_color;
+                        }
+
+                    }
+
+
+
+
+                    #picOne {
+                        background-image: url(/TechnicalChallenge/Images/Man.jpg);
+                        @include imageStyle;
+                        margin-top: 20px;
+
+                    }
+
+                    #picTwo {
+                        background-image: url(/TechnicalChallenge/Images/firstWoman.jpg);
+                        @include imageStyle;
+                        margin-top: 20px;
+
+
+                    }
+
+                    #picThree {
+                        background-image: url(/TechnicalChallenge/Images/secondWoman.jpg);
+                        @include imageStyle;
+                        margin-top: 20px;
+
+                    }
+                }
+
+                .textDiv {
+                    margin: 50px auto auto 40px;
+
+                    p {
+                        color: $paragraph_color;
+                        width: 260px;
+                        font-size: 14px;
+
+                    }
+
+                }
+
+            }
+            #boxOne{
+                margin-top: 20rem;
+                margin-left: 40px;
+            }
+            #boxTwo{
+                margin-top: 20px;
+                margin-left: 40px;
+
+            }
+            #boxThree{
+                margin-top: 40px;
+                margin-left: 40px;
+
+            }
+
+        }
+    }
+}

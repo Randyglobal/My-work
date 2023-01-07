@@ -1,0 +1,152 @@
+main{
+    @include leftRightElements (80vw, 90vh, white);
+
+    margin: 25px auto;
+
+    section{
+        .contentDiv{
+            @include leftRightElements (100%, 45vh, white);
+            display: flex;
+
+            .leftDiv{
+                @include leftRightElements (50%, inherit, white);
+                h1{
+                    font-weight: $heading_font-weight;
+                    font-family: $paragraph_font-family;
+                    font-size: 50px;
+                    width: 450px;
+                    line-height: 50px;
+                    color: $heading_color;
+                    margin-top: 30px;
+                }
+                p{
+                    font-family: $paragraph_font-family;
+                    font-weight: $firstParagraph_font-weight;
+                    width: 430px;
+                    color: $firstText_color;
+                    margin-top: 20px;
+
+                }
+            }
+
+            .rightDiv{
+                @include leftRightElements (50%, inherit, white);
+
+                .starElements{
+                @include leftRightElements (370px, 33px, $starDiv_color);
+                border-radius: 4px;
+                margin-top: 15px;
+                margin-left: 60px;
+                i{
+                    margin-top: 5px;
+                    color: $star_color;
+                }
+                #star{
+                    margin-left: 20px;
+                }
+                span{
+                    font-family: $paragraph_font-family;
+                    margin-left: 20px;
+                    color: $firstText_color;
+                    font-weight: 600;
+                    font-size: 15px;
+                    
+                }
+
+                }
+                #starElementsOne{
+                    margin-top: 40px;
+                }
+                #starElementsTwo{
+                    margin-left: 100px;
+                }
+                #starElementsThree{
+                    margin-left: 140px;
+                }
+
+            }
+        }
+    }
+
+    section{
+        .profileDiv{
+            @include leftRightElements (100%, 45vh, white);
+            display: flex;
+            font-family: $paragraph_font-family;
+
+            .profileBox{
+            @include leftRightElements (330px, 200px, $underDiv_color);
+            margin-left: 40px;
+            border-radius: 8px;
+
+            .profileName{
+                width: 80%;
+                height: 20px;
+                margin: 20px auto;
+                display: flex;
+                
+                // justify-content: space-evenly;
+
+                .profilePic{
+                    width: 30px;
+                    height: 30px;
+                    border: 2px solid black;
+                    border-radius: 50%;
+                }
+
+                .names{
+                    font-size: 20px;
+                    margin-left: 15px;
+                    line-height: 19px;
+                   
+
+                    .verified{
+                        color: $h6_color;
+                    }
+
+                    .name{
+                        color: $paragraph_color;
+                    }
+                   
+                }
+
+                
+
+                #picOne{
+                    background-image: url(/TechnicalChallenge/Images/Man.jpg);
+                    @include imageStyle; 
+  
+                }
+                #picTwo{
+                    background-image: url(/TechnicalChallenge/Images/firstWoman.jpg);
+                   @include imageStyle; 
+                      
+                }
+                #picThree{
+                    background-image: url(/TechnicalChallenge/Images/secondWoman.jpg);
+                   @include imageStyle; 
+                }
+            }
+            .textDiv{
+                margin: 40px auto auto 40px;
+            p{
+                color: $paragraph_color;
+                width: 260px;
+                font-size: 14px;
+                
+            }
+        }
+               
+            }
+            #boxOne{
+                margin-left: 0;
+            }
+            #boxTwo{
+                margin-top: 20px;
+            }
+            #boxThree{
+                margin-top: 40px;
+            }
+        }
+    }
+}

@@ -238,20 +238,20 @@ main section .profileDiv #boxThree {
   }
   main section .contentDiv .rightDiv .starElements span {
     font-family: "Outfit", sans-serif;
-    margin-left: 20px;
+    margin-left: 15px;
     color: #430156f6;
     font-weight: 600;
     font-size: 15px;
   }
   main section .contentDiv .rightDiv #starElementsOne {
     margin-top: 60px;
-    margin-left: 10px;
+    margin-left: 5px;
   }
   main section .contentDiv .rightDiv #starElementsTwo {
-    margin-left: 10px;
+    margin-left: 5px;
   }
   main section .contentDiv .rightDiv #starElementsThree {
-    margin-left: 10px;
+    margin-left: 5px;
   }
   main section .profileDiv {
     width: 100%;
@@ -324,15 +324,15 @@ main section .profileDiv #boxThree {
   }
   main section .profileDiv #boxOne {
     margin-top: 20rem;
-    margin-left: 40px;
+    margin-left: 25px;
   }
   main section .profileDiv #boxTwo {
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 25px;
   }
   main section .profileDiv #boxThree {
-    margin-top: 40px;
-    margin-left: 40px;
+    margin-top: 20px;
+    margin-left: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */

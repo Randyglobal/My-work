@@ -12,6 +12,14 @@
 }
 
 @import './main';
+@media (max-width: 1200px){
+    @import './normal/normal';
+};
+
+@media (max-width: 900px){
+    @import './tablet/tablet';
+};
+
 @media (max-width: 576px) {
     @import './media/mobile';
 }

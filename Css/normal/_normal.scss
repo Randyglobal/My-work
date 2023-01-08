@@ -1,19 +1,15 @@
 main {
-    //including the mixin
     @include leftRightElements (80vw, 90vh, white);
 
     margin: 25px auto;
 
     section {
         .contentDiv {
-    //including the mixin
-
             @include leftRightElements (100%, 45vh, white);
-            //placing the elements inline with display: flex;
             display: flex;
 
             .leftDiv {
-                @include leftRightElements (50%, inherit, white);
+                @include leftRightElements (40%, inherit, white);
 
                 h1 {
                     font-weight: $headingFontWeight;
@@ -36,7 +32,7 @@ main {
             }
 
             .rightDiv {
-                @include leftRightElements (50%, inherit, white);
+                @include leftRightElements (40%, inherit, transparent);
 
                 .starElements {
                     @include leftRightElements (370px, 33px, $starDivColor);
@@ -87,8 +83,8 @@ main {
             font-family: $paragraphFontFamily;
 
             .profileBox {
-                @include leftRightElements (330px, 200px, $underDivColor);
-                margin-left: 40px;
+                @include leftRightElements (280px, 250px, $underDivColor);
+                margin-left: 20px;
                 border-radius: 8px;
 
                 .profileName {
@@ -143,11 +139,11 @@ main {
                 }
 
                 .textDiv {
-                    margin: 40px auto auto 40px;
+                    margin: 40px auto auto 20px;
 
                     p {
                         color: $paragraphColor;
-                        width: 260px;
+                        width: 220px;
                         font-size: 14px;
 
                     }

@@ -1,19 +1,15 @@
 main {
-    //including the mixin
     @include leftRightElements (80vw, 90vh, white);
 
-    margin: 25px auto;
+    margin: 15px auto;
 
     section {
         .contentDiv {
-    //including the mixin
-
             @include leftRightElements (100%, 45vh, white);
-            //placing the elements inline with display: flex;
-            display: flex;
+            display: block;
 
             .leftDiv {
-                @include leftRightElements (50%, inherit, white);
+                @include leftRightElements (40%, inherit, white);
 
                 h1 {
                     font-weight: $headingFontWeight;
@@ -36,26 +32,27 @@ main {
             }
 
             .rightDiv {
-                @include leftRightElements (50%, inherit, white);
+                @include leftRightElements (10%, inherit, transparent);
+                margin-left: 0px;
 
                 .starElements {
-                    @include leftRightElements (370px, 33px, $starDivColor);
+                    @include leftRightElements (560px, 50px, $starDivColor);
                     border-radius: 4px;
                     margin-top: 15px;
-                    margin-left: 60px;
+                    margin-left: 70px;
 
                     i {
-                        margin-top: 5px;
+                        margin-top: 10px;
                         color: $starColor;
                     }
 
                     #star {
-                        margin-left: 20px;
+                        margin-left: 50px;
                     }
 
                     span {
                         font-family: $paragraphFontFamily;
-                        margin-left: 20px;
+                        margin-left: 60px;
                         color: $firstTextColor;
                         font-weight: 600;
                         font-size: 15px;
@@ -66,14 +63,16 @@ main {
 
                 #starElementsOne {
                     margin-top: 40px;
+                    margin-left: 10px;
+
                 }
 
                 #starElementsTwo {
-                    margin-left: 100px;
+                    margin-left: 10px;
                 }
 
                 #starElementsThree {
-                    margin-left: 140px;
+                    margin-left: 10px;
                 }
 
             }
@@ -85,10 +84,11 @@ main {
             @include leftRightElements (100%, 45vh, white);
             display: flex;
             font-family: $paragraphFontFamily;
+            margin-top: 20rem;
 
             .profileBox {
-                @include leftRightElements (330px, 200px, $underDivColor);
-                margin-left: 40px;
+                @include leftRightElements (280px, 250px, $underDivColor);
+                margin-left: 20px;
                 border-radius: 8px;
 
                 .profileName {
@@ -143,11 +143,11 @@ main {
                 }
 
                 .textDiv {
-                    margin: 40px auto auto 40px;
+                    margin: 40px auto auto 20px;
 
                     p {
                         color: $paragraphColor;
-                        width: 260px;
+                        width: 220px;
                         font-size: 14px;
 
                     }
@@ -156,15 +156,17 @@ main {
             }
 
             #boxOne {
-                margin-left: 0;
+                margin-left: 40px;
             }
 
             #boxTwo {
-                margin-top: 20px;
+                margin-top: 0px;
             }
 
             #boxThree {
-                margin-top: 40px;
+                margin-top: 20rem;
+                margin-left: -27rem;
+
             }
         }
     }

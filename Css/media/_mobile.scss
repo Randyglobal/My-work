@@ -12,26 +12,26 @@ main {
 
                 h1 {
                     // align-items: center;
-                    font-weight: $heading_font-weight;
-                    font-family: $paragraph_font-family;
+                    font-weight: $headingFontWeight;
+                    font-family: $paragraphFontFamily;
                     font-size: 35px;
                     text-align: center;
                     width: 100%;
                     line-height: 30px;
-                    color: $heading_color;
+                    color: $headingColor;
                 }
 
                 p {
                     text-align: center;
-                    font-family: $paragraph_font-family;
-                    font-weight: $firstParagraph_font-weight;
+                    font-family: $paragraphFontFamily;
+                    font-weight: $firstParagraphFontWeight;
                     width: 100%;
                     font-size: 20px;
-                    color: $firstText_color;
+                    color: $firstTextColor;
                     margin-left: 0px;
                 }
 
-                #para{
+                #para {
                     margin-top: 30px
                 }
             }
@@ -40,25 +40,26 @@ main {
                 @include leftRightElements (100%, inherit, white);
 
                 .starElements {
-                    @include leftRightElements (90%, 33px, $starDiv_color);
+                    @include leftRightElements (90%, 33px, $starDivColor);
                     border-radius: 4px;
                     margin-top: 20px;
                     align-items: center;
                     padding: 10px;
                     // margin-left: 20px;
-                    
+
                     i {
                         margin-top: 5px;
-                        color: $star_color;
+                        color: $starColor;
+                        margin-left: -10px;
                     }
 
                     // #star{
                     //     margin-left: 20px;
                     // }
                     span {
-                        font-family: $paragraph_font-family;
+                        font-family: $paragraphFontFamily;
                         margin-left: 15px;
-                        color: $firstText_color;
+                        color: $firstTextColor;
                         font-weight: 600;
                         font-size: 15px;
 
@@ -89,10 +90,10 @@ main {
             display: block;
             align-items: center;
             margin-left: 0px;
-            font-family: $paragraph_font-family;
+            font-family: $paragraphFontFamily;
 
             .profileBox {
-                @include leftRightElements (330px, 200px, $underDiv_color);
+                @include leftRightElements (330px, 200px, $underDivColor);
                 border-radius: 8px;
 
                 .profileName {
@@ -119,11 +120,11 @@ main {
 
 
                         .verified {
-                            color: $h6_color;
+                            color: $h6Color;
                         }
 
                         .name {
-                            color: $paragraph_color;
+                            color: $paragraphColor;
                         }
 
                     }
@@ -158,7 +159,7 @@ main {
                     margin: 50px auto auto 40px;
 
                     p {
-                        color: $paragraph_color;
+                        color: $paragraphColor;
                         width: 260px;
                         font-size: 14px;
 
@@ -167,18 +168,23 @@ main {
                 }
 
             }
-            #boxOne{
+
+            #boxOne {
                 margin-top: 20rem;
-                margin-left: 25px;
+                margin-left: 30px;
             }
-            #boxTwo{
+
+            #boxTwo {
                 margin-top: 20px;
-                margin-left: 25px;
+                margin-left: 30px;
+
 
             }
-            #boxThree{
+
+            #boxThree {
                 margin-top: 20px;
-                margin-left: 25px;  
+                margin-left: 30px;
+
 
             }
 

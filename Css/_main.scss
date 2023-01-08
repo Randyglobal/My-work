@@ -8,7 +8,7 @@ main {
         .contentDiv {
     //including the mixin
 
-            @include leftRightElements (100%, 45vh, white);
+            @include leftRightElements (100%, 45vh, white);  
             //placing the elements inline with display: flex;
             display: flex;
 
@@ -93,9 +93,10 @@ main {
 
                 &:hover {
                     
-                    animation-duration: 1s;
+                  
+                    animation-duration: 0.5s;
                     animation-name: boxOne;
-                    animation-iteration-count: 20;
+                    animation-iteration-count: 1;      
                     animation-direction: alternate;
                 }
 
@@ -142,26 +143,22 @@ main {
 
                     }
 
-
-
                     #picOne {
-                        background-image: url(/Images/Man.jpg);
+                        background-image: url(/TechnicalChallenge/Images/Man.jpg);
                         @include imageStyle;
-
                     }
 
                     #picTwo {
-                        background-image: url(/Images/firstWoman.jpg);
+                        background-image: url(/TechnicalChallenge/Images/firstWoman.jpg);
                         @include imageStyle;
-
                     }
 
                     #picThree {
-                        background-image: url(/Images/secondWoman.jpg);
+                        background-image: url(/TechnicalChallenge/Images/secondWoman.jpg);
                         @include imageStyle;
                     }
                 }
-
+                
                 .textDiv {
                     margin: 40px auto auto 40px;
 

@@ -108,12 +108,12 @@ main section .profileDiv .profileBox {
 }
 
 main section .profileDiv .profileBox:hover {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-name: boxOne;
           animation-name: boxOne;
-  -webkit-animation-iteration-count: 20;
-          animation-iteration-count: 20;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
 }
@@ -161,19 +161,19 @@ main section .profileDiv .profileBox .profileName .names .name {
 }
 
 main section .profileDiv .profileBox .profileName #picOne {
-  background-image: url(/Images/Man.jpg);
+  background-image: url(/TechnicalChallenge/Images/Man.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 main section .profileDiv .profileBox .profileName #picTwo {
-  background-image: url(/Images/firstWoman.jpg);
+  background-image: url(/TechnicalChallenge/Images/firstWoman.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 main section .profileDiv .profileBox .profileName #picThree {
-  background-image: url(/Images/secondWoman.jpg);
+  background-image: url(/TechnicalChallenge/Images/secondWoman.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -457,12 +457,12 @@ main section .profileDiv #boxThree {
     border-radius: 8px;
   }
   main section .profileDiv .profileBox:hover {
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
     -webkit-animation-name: boxOne;
             animation-name: boxOne;
-    -webkit-animation-iteration-count: 20;
-            animation-iteration-count: 20;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
     -webkit-animation-direction: alternate;
             animation-direction: alternate;
   }

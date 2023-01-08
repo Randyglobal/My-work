@@ -93,9 +93,9 @@ main {
 
                 &:hover {
                     
-                    animation-duration: 1s;
+                    animation-duration: 0.5s;
                     animation-name: boxOne;
-                    animation-iteration-count: 20;
+                    animation-iteration-count: 1;      
                     animation-direction: alternate;
                 }
 

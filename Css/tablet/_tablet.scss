@@ -91,6 +91,26 @@ main {
                 margin-left: 20px;
                 border-radius: 8px;
 
+                &:hover {
+                    
+                    animation-duration: 1s;
+                    animation-name: boxOne;
+                    animation-iteration-count: 20;
+                    animation-direction: alternate;
+                }
+
+                @keyframes boxOne {
+                    from {
+                        margin-top: -2%;
+                        
+                    }
+                
+                    // to {
+                    //     margin-top: 0%;
+                        
+                    // }
+            }
+
                 .profileName {
                     width: 80%;
                     height: 20px;

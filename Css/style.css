@@ -107,6 +107,29 @@ main section .profileDiv .profileBox {
   border-radius: 8px;
 }
 
+main section .profileDiv .profileBox:hover {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: boxOne;
+          animation-name: boxOne;
+  -webkit-animation-iteration-count: 20;
+          animation-iteration-count: 20;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes boxOne {
+  from {
+    margin-top: -2%;
+  }
+}
+
+@keyframes boxOne {
+  from {
+    margin-top: -2%;
+  }
+}
+
 main section .profileDiv .profileBox .profileName {
   width: 80%;
   height: 20px;
@@ -265,6 +288,26 @@ main section .profileDiv #boxThree {
     margin-left: 20px;
     border-radius: 8px;
   }
+  main section .profileDiv .profileBox:hover {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-name: boxOne;
+            animation-name: boxOne;
+    -webkit-animation-iteration-count: 20;
+            animation-iteration-count: 20;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+  }
+  @-webkit-keyframes boxOne {
+    from {
+      margin-top: -2%;
+    }
+  }
+  @keyframes boxOne {
+    from {
+      margin-top: -2%;
+    }
+  }
   main section .profileDiv .profileBox .profileName {
     width: 80%;
     height: 20px;
@@ -412,6 +455,26 @@ main section .profileDiv #boxThree {
     background: #3e0041f6;
     margin-left: 20px;
     border-radius: 8px;
+  }
+  main section .profileDiv .profileBox:hover {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-name: boxOne;
+            animation-name: boxOne;
+    -webkit-animation-iteration-count: 20;
+            animation-iteration-count: 20;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+  }
+  @-webkit-keyframes boxOne {
+    from {
+      margin-top: -2%;
+    }
+  }
+  @keyframes boxOne {
+    from {
+      margin-top: -2%;
+    }
   }
   main section .profileDiv .profileBox .profileName {
     width: 80%;

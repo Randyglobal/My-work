@@ -95,6 +95,7 @@ main {
             .profileBox {
                 @include leftRightElements (330px, 200px, $underDivColor);
                 border-radius: 8px;
+                
 
                 .profileName {
                     width: 80%;

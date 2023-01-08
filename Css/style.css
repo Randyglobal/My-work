@@ -531,6 +531,9 @@ main section .profileDiv #boxThree {
   main section .contentDiv .rightDiv .starElements i {
     margin-top: 5px;
     color: rgba(255, 145, 0, 0.704);
+    margin-left: 5px;
+  }
+  main section .contentDiv .rightDiv .starElements #star {
     margin-left: -10px;
   }
   main section .contentDiv .rightDiv .starElements span {

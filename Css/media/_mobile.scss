@@ -50,12 +50,12 @@ main {
                     i {
                         margin-top: 5px;
                         color: $starColor;
-                        margin-left: -10px;
+                        margin-left: 5px;
                     }
 
-                    // #star{
-                    //     margin-left: 20px;
-                    // }
+                    #star{
+                        margin-left: -10px;
+                    }
                     span {
                         font-family: $paragraphFontFamily;
                         margin-left: 15px;

@@ -1,0 +1,181 @@
+@media screen and (max-width: 580px) {
+  main {
+    @include leftRightElements(95%, 90vh, white);
+    margin-left: 0px;
+    section {
+      .content {
+        @include leftRightElements(100%, 30vh, white);
+        display: block;
+        // margin-left: 10px;
+
+        .left_content {
+          @include leftRightElements(100%, inherit, white);
+          margin-top: 50px;
+
+          h1 {
+            // align-items: center;   
+            font-weight: $fontWeight600;
+            font-family: $fontFamilies;
+            font-size: 35px;
+            text-align: center;
+            width: 100%;
+            line-height: 30px;
+            color: $headingColor;
+            // background: red;
+
+          }
+
+          p {
+            text-align: center;
+            font-family: $fontFamilies;
+            font-weight: $fontWeight200;
+            width: 100%;
+            font-size: 20px;
+            color: $firstTextColor;
+            margin-left: 0px;
+          }
+
+          #description_paragraph {
+            margin-top: 30px;
+          }
+        }
+
+        .right_content {
+          @include leftRightElements(100%, inherit, white);
+
+          .star_elements {
+            @include leftRightElements(90%, 33px, $starDivColor);
+            border-radius: 4px;
+            margin-top: 20px;
+            align-items: center;
+            padding: 10px;
+
+            i {
+              margin-top: 5px;
+              color: $starColor;
+              margin-left: 5px;
+            }
+
+            #star {
+              margin-left: 0px;
+            }
+
+            span {
+              font-family: $fontFamilies;
+              margin-left: 15px;
+              color: $firstTextColor;
+              font-weight: 600;
+              font-size: 15px;
+            }
+          }
+
+          #star_element_one {
+            margin-top: 20px;
+            margin-left: 10px;
+          }
+
+          #star_element_two {
+            margin-left: 10px;
+          }
+
+          #star_element_three {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+    section {
+      .profiles {
+        @include leftRightElements(100%, 45vh, white);
+        display: block;
+        // align-items: center;
+        // margin-left: -80px;
+        font-family: $fontFamilies;
+
+        .profile_box {
+          @include leftRightElements(10px, 200px, $divColor);
+          border-radius: 8px;
+
+          .profile_infos {
+            width: 80%;
+            height: 20px;
+            margin: 20px auto;
+            display: flex;
+
+            .profile_picture {
+              width: 25px;
+              height: 25px;
+              border: 2px solid black;  
+              border-radius: 50%;
+            }
+
+            .profile_details {
+              font-size: 20px;
+              margin-left: 15px;
+              line-height: 15px;
+              margin-top: 20px;
+
+              .profile_status {
+                color: $h6Color;
+              }
+
+              .profile_name {
+                color: $paragraphColor;
+              }
+            }
+
+            #profile_picture_one {
+              background-image: url(/Images/Man.jpg);
+              @include imageStyle;
+              margin-top: 20px;
+            }
+
+            #profile_picture_two {
+              background-image: url(/Images/firstWoman.jpg);
+              @include imageStyle;
+              margin-top: 20px;
+            }
+
+            #profile_picture_three {
+              background-image: url(/Images/secondWoman.jpg);
+              @include imageStyle;
+              margin-top: 20px;
+            }
+          }
+
+          .profile_description {
+            margin: 70px auto auto 40px;
+
+            p {
+              color: $paragraphColor;
+              width: 260px;
+              font-size: 14px;
+              // margin-top: 30px;
+            }
+          }
+        }
+
+        #box_one {
+          margin-top: 20rem;
+          margin-left: 30px;
+          width: 400px;
+        }
+
+        #box_two {
+          margin-top: 20px;
+          margin-left: 30px;
+          width: 400px;
+
+        }
+
+        #box_three {
+          margin-top: 20px;
+          margin-left: 30px;
+          width: 400px;
+
+        }
+      }
+    }
+  }
+}

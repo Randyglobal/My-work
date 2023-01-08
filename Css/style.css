@@ -534,7 +534,7 @@ main section .profileDiv #boxThree {
     margin-left: 5px;
   }
   main section .contentDiv .rightDiv .starElements #star {
-    margin-left: -10px;
+    margin-left: 0px;
   }
   main section .contentDiv .rightDiv .starElements span {
     font-family: "Outfit", sans-serif;
@@ -545,13 +545,13 @@ main section .profileDiv #boxThree {
   }
   main section .contentDiv .rightDiv #starElementsOne {
     margin-top: 60px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   main section .contentDiv .rightDiv #starElementsTwo {
-    margin-left: 5px;
+    margin-left: 10px;
   }
   main section .contentDiv .rightDiv #starElementsThree {
-    margin-left: 5px;
+    margin-left: 10px;
   }
   main section .profileDiv {
     width: 100%;
@@ -597,19 +597,19 @@ main section .profileDiv #boxThree {
     color: white;
   }
   main section .profileDiv .profileBox .profileName #picOne {
-    background-image: url(/TechnicalChallenge/Images/Man.jpg);
+    background-image: url(/Images/Man.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 20px;
   }
   main section .profileDiv .profileBox .profileName #picTwo {
-    background-image: url(/TechnicalChallenge/Images/firstWoman.jpg);
+    background-image: url(/Images/firstWoman.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 20px;
   }
   main section .profileDiv .profileBox .profileName #picThree {
-    background-image: url(/TechnicalChallenge/Images/secondWoman.jpg);
+    background-image: url(/Images/secondWoman.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 20px;

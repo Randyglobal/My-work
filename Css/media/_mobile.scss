@@ -54,7 +54,7 @@ main {
                     }
 
                     #star{
-                        margin-left: -10px;
+                        margin-left: 0px;
                     }
                     span {
                         font-family: $paragraphFontFamily;
@@ -69,15 +69,15 @@ main {
 
                 #starElementsOne {
                     margin-top: 60px;
-                    margin-left: 5px;
+                    margin-left: 10px;
                 }
 
                 #starElementsTwo {
-                    margin-left: 5px;
+                    margin-left: 10px;
                 }
 
                 #starElementsThree {
-                    margin-left: 5px;
+                    margin-left: 10px;
                 }
 
             }
@@ -133,14 +133,14 @@ main {
 
 
                     #picOne {
-                        background-image: url(/TechnicalChallenge/Images/Man.jpg);
+                        background-image: url(/Images/Man.jpg);
                         @include imageStyle;
                         margin-top: 20px;
 
                     }
 
                     #picTwo {
-                        background-image: url(/TechnicalChallenge/Images/firstWoman.jpg);
+                        background-image: url(/Images/firstWoman.jpg);
                         @include imageStyle;
                         margin-top: 20px;
 
@@ -148,7 +148,7 @@ main {
                     }
 
                     #picThree {
-                        background-image: url(/TechnicalChallenge/Images/secondWoman.jpg);
+                        background-image: url(/Images/secondWoman.jpg);
                         @include imageStyle;
                         margin-top: 20px;
 

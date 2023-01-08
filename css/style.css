@@ -263,7 +263,7 @@ main section .profiles #box_three:hover {
   }
 }
 
-@media screen and (max-width: 580px) {
+@media (max-width: 576px) {
   main {
     width: 95%;
     height: 90vh;

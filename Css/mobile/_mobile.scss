@@ -1,57 +1,62 @@
 main {
-  @include leftRightElements(80vw, 90vh, white);
-  margin: 15px auto;
+  @include leftRightElements(100%, 90vh, white);
 
   section {
     .content {
-      @include leftRightElements(100%, 45vh, white);
+      @include leftRightElements(100%, 30vh, white);
       display: block;
 
       .left_content {
-        @include leftRightElements(40%, inherit, white);
+        @include leftRightElements(100%, inherit, white);
+        margin-top: 100px;
 
         h1 {
+          // align-items: center;
           font-weight: $fontWeight600;
           font-family: $fontFamilies;
-          font-size: 40px;
-          width: 450px;
-          line-height: 50px;
+          font-size: 35px;
+          text-align: center;
+          width: 100%;
+          line-height: 30px;
           color: $headingColor;
-          margin-top: 30px;
         }
 
         p {
+          text-align: center;
           font-family: $fontFamilies;
           font-weight: $fontWeight200;
-          width: 430px;
+          width: 100%;
+          font-size: 20px;
           color: $firstTextColor;
-          margin-top: 20px;
-          font-size: 10px;
+          margin-left: 0px;
+        }
+
+        #description_paragraph {
+          margin-top: 30px;
         }
       }
 
       .right_content {
-        @include leftRightElements(10%, inherit, transparent);
-        margin-left: 0px;
+        @include leftRightElements(100%, inherit, white);
 
         .star_elements {
-          @include leftRightElements(560px, 50px, $starDivColor);
+          @include leftRightElements(90%, 33px, $starDivColor);
           border-radius: 4px;
-          margin-top: 15px;
-          margin-left: 70px;
-
+          margin-top: 20px;
+          align-items: center;
+          padding: 10px;
           i {
-            margin-top: 10px;
+            margin-top: 5px;
             color: $starColor;
+            margin-left: 5px;
           }
 
           #star {
-            margin-left: 50px;
+            margin-left: 0px;
           }
-
           span {
             font-family: $fontFamilies;
-            margin-left: 60px;
+            margin-left: 15px;
             color: $firstTextColor;
             font-weight: 600;
             font-size: 15px;
@@ -59,7 +64,7 @@ main {
         }
 
         #star_element_one {
-          margin-top: 40px;
+          margin-top: 20px;
           margin-left: 10px;
         }
 
@@ -77,27 +82,14 @@ main {
   section {
     .profiles {
       @include leftRightElements(100%, 45vh, white);
-      display: flex;
+      display: block;
+      align-items: center;
+      margin-left: 0px;
       font-family: $fontFamilies;
-      margin-top: 20rem;
 
       .profile_box {
-        @include leftRightElements(280px, 250px, $divColor);
-        margin-left: 20px;
+        @include leftRightElements(330px, 200px, $divColor);
         border-radius: 8px;
-
-        &:hover {
-          animation-duration: 1s;
-          animation-name: box_one;
-          animation-iteration-count: 20;
-          animation-direction: alternate;
-        }
-
-        @keyframes box_one {
-          from {
-            margin-top: -2%;
-          }
-        }
 
         .profile_infos {
           width: 80%;
@@ -116,6 +108,7 @@ main {
             font-size: 20px;
             margin-left: 15px;
             line-height: 19px;
+            margin-top: 20px;
 
             .profile_status {
               color: $h6Color;
@@ -129,41 +122,46 @@ main {
           #profile_picture_one {
             background-image: url(/Images/Man.jpg);
             @include imageStyle;
+            margin-top: 20px;
           }
 
           #profile_picture_two {
             background-image: url(/Images/firstWoman.jpg);
             @include imageStyle;
+            margin-top: 20px;
           }
 
           #profile_picture_three {
             background-image: url(/Images/secondWoman.jpg);
             @include imageStyle;
+            margin-top: 20px;
           }
         }
 
         .profile_description {
-          margin: 40px auto auto 20px;
+          margin: 50px auto auto 40px;
 
           p {
             color: $paragraphColor;
-            width: 220px;
+            width: 260px;
             font-size: 14px;
           }
         }
       }
 
       #box_one {
-        margin-left: 40px;
+        margin-top: 20rem;
+        margin-left: 30px;
       }
 
       #box_two {
-        margin-top: 0px;
+        margin-top: 20px;
+        margin-left: 30px;
       }
 
       #box_three {
-        margin-top: 20rem;
-        margin-left: -27rem;
+        margin-top: 20px;
+        margin-left: 30px;
       }
     }
   }

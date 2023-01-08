@@ -1,372 +1,366 @@
-@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Cantarell:wght@400;700&family=Catamaran:wght@300&family=Lato:wght@700&family=Outfit:wght@200;300&family=Titan+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Cantarell:wght@400;700&family=Catamaran:wght@300&family=Outfit:wght@200&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
 main {
-  width: 80vw;
+  width: 80%;
   height: 90vh;
   background: white;
-  margin: 25px auto;
+  margin-left: 12%;
 }
-
-main section .contentDiv {
+main section .content {
   width: 100%;
   height: 45vh;
   background: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
-main section .contentDiv .leftDiv {
+main section .content .left_content {
   width: 50%;
   height: inherit;
   background: white;
+  padding-top: 50px;
 }
-
-main section .contentDiv .leftDiv h1 {
+main section .content .left_content h1 {
   font-weight: 600;
   font-family: "Outfit", sans-serif;
-  font-size: 50px;
-  width: 450px;
-  line-height: 50px;
-  color: #570064fa;
+  font-size: 100px;
+  width: 90%;
+  line-height: 90px;
+  color: rgba(87, 0, 100, 0.9803921569);
   margin-top: 30px;
 }
-
-main section .contentDiv .leftDiv p {
+main section .content .left_content p {
   font-family: "Outfit", sans-serif;
   font-weight: 200;
-  width: 430px;
-  color: #430156f6;
-  margin-top: 20px;
+  width: 90%;
+  color: rgba(67, 1, 86, 0.9647058824);
+  font-size: 28px;
+  margin-top: 50px;
 }
-
-main section .contentDiv .rightDiv {
+main section .content .right_content {
   width: 50%;
   height: inherit;
   background: white;
+  padding-top: 50px;
 }
-
-main section .contentDiv .rightDiv .starElements {
-  width: 370px;
-  height: 33px;
+main section .content .right_content .star_elements {
+  width: 450px;
+  height: 50px;
   background: rgba(221, 221, 221, 0.315);
-  border-radius: 4px;
+  border-radius: 5px;
   margin-top: 15px;
   margin-left: 60px;
+  font-size: 20px;
 }
-
-main section .contentDiv .rightDiv .starElements i {
-  margin-top: 5px;
+main section .content .right_content .star_elements i {
+  margin-top: 15px;
   color: rgba(255, 145, 0, 0.704);
 }
-
-main section .contentDiv .rightDiv .starElements #star {
+main section .content .right_content .star_elements #star {
   margin-left: 20px;
 }
-
-main section .contentDiv .rightDiv .starElements span {
+main section .content .right_content .star_elements span {
   font-family: "Outfit", sans-serif;
   margin-left: 20px;
-  color: #430156f6;
+  color: rgba(67, 1, 86, 0.9647058824);
   font-weight: 600;
-  font-size: 15px;
+  font-size: 20px;
 }
-
-main section .contentDiv .rightDiv #starElementsOne {
-  margin-top: 40px;
+main section .content .right_content #star_element_one {
+  margin-top: 80px;
 }
-
-main section .contentDiv .rightDiv #starElementsTwo {
+main section .content .right_content #star_element_two {
   margin-left: 100px;
 }
-
-main section .contentDiv .rightDiv #starElementsThree {
+main section .content .right_content #star_element_three {
   margin-left: 140px;
 }
-
-main section .profileDiv {
+main section .profiles {
   width: 100%;
   height: 45vh;
   background: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-family: "Outfit", sans-serif;
 }
-
-main section .profileDiv .profileBox {
-  width: 330px;
-  height: 200px;
-  background: #3e0041f6;
+main section .profiles .profile_box {
+  width: 450px;
+  height: 250px;
+  background: rgba(62, 0, 65, 0.9647058824);
   margin-left: 40px;
   border-radius: 8px;
+  margin-top: 100px;
 }
-
-main section .profileDiv .profileBox:hover {
+main section .profiles .profile_box:hover {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-name: boxOne;
-          animation-name: boxOne;
+  -webkit-animation-name: box_one;
+          animation-name: box_one;
   -webkit-animation-iteration-count: 20;
           animation-iteration-count: 20;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
 }
-
-@-webkit-keyframes boxOne {
+@-webkit-keyframes box_one {
   from {
     margin-top: -2%;
   }
 }
-
-@keyframes boxOne {
+@keyframes box_one {
   from {
     margin-top: -2%;
   }
 }
-
-main section .profileDiv .profileBox .profileName {
+main section .profiles .profile_box .profile_infos {
   width: 80%;
   height: 20px;
   margin: 20px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
-main section .profileDiv .profileBox .profileName .profilePic {
+main section .profiles .profile_box .profile_infos .profile_picture {
   width: 30px;
   height: 30px;
   border: 2px solid black;
   border-radius: 50%;
 }
-
-main section .profileDiv .profileBox .profileName .names {
+main section .profiles .profile_box .profile_infos .profile_details {
   font-size: 20px;
   margin-left: 15px;
   line-height: 19px;
 }
-
-main section .profileDiv .profileBox .profileName .names .verified {
-  color: #a903a6be;
-}
-
-main section .profileDiv .profileBox .profileName .names .name {
+main section .profiles .profile_box .profile_infos .profile_details .profile_name {
   color: white;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
-
-main section .profileDiv .profileBox .profileName #picOne {
-  background-image: url(/Images/Man.jpg);
+main section .profiles .profile_box .profile_infos .profile_details .profile_status {
+  color: rgba(169, 3, 166, 0.7450980392);
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+main section .profiles .profile_box .profile_infos #profile_picture_one {
+  background-image: url(../images/Man.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 60px;
+  height: 60px;
 }
-
-main section .profileDiv .profileBox .profileName #picTwo {
-  background-image: url(/Images/firstWoman.jpg);
+main section .profiles .profile_box .profile_infos #profile_picture_two {
+  background-image: url(../images/firstWoman.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 60px;
+  height: 60px;
 }
-
-main section .profileDiv .profileBox .profileName #picThree {
-  background-image: url(/Images/secondWoman.jpg);
+main section .profiles .profile_box .profile_infos #profile_picture_three {
+  background-image: url(../images/secondWoman.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 60px;
+  height: 60px;
 }
-
-main section .profileDiv .profileBox .textDiv {
+main section .profiles .profile_box .profile_description {
   margin: 40px auto auto 40px;
 }
-
-main section .profileDiv .profileBox .textDiv p {
+main section .profiles .profile_box .profile_description p {
   color: white;
-  width: 260px;
-  font-size: 14px;
+  width: 90%;
+  font-size: 20px;
+  margin-top: 70px;
 }
-
-main section .profileDiv #boxOne {
+main section .profiles #box_one {
   margin-left: 0;
+  margin-top: 150px;
 }
-
-main section .profileDiv #boxTwo {
-  margin-top: 20px;
+main section .profiles #box_two {
+  margin-top: 170px;
 }
-
-main section .profileDiv #boxThree {
-  margin-top: 40px;
+main section .profiles #box_three {
+  margin-top: 190px;
 }
 
 @media (max-width: 1200px) {
   main {
-    width: 80vw;
+    width: 80%;
     height: 90vh;
     background: white;
-    margin: 25px auto;
+    margin-left: 12%;
   }
-  main section .contentDiv {
+  main section .content {
     width: 100%;
     height: 45vh;
     background: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
-  main section .contentDiv .leftDiv {
-    width: 40%;
+  main section .content .left_content {
+    width: 50%;
     height: inherit;
     background: white;
+    padding-top: 50px;
   }
-  main section .contentDiv .leftDiv h1 {
+  main section .content .left_content h1 {
     font-weight: 600;
     font-family: "Outfit", sans-serif;
-    font-size: 50px;
-    width: 450px;
-    line-height: 50px;
-    color: #570064fa;
+    font-size: 100px;
+    width: 90%;
+    line-height: 90px;
+    color: rgba(87, 0, 100, 0.9803921569);
     margin-top: 30px;
   }
-  main section .contentDiv .leftDiv p {
+  main section .content .left_content p {
     font-family: "Outfit", sans-serif;
     font-weight: 200;
-    width: 430px;
-    color: #430156f6;
-    margin-top: 20px;
+    width: 90%;
+    color: rgba(67, 1, 86, 0.9647058824);
+    font-size: 28px;
+    margin-top: 50px;
   }
-  main section .contentDiv .rightDiv {
-    width: 40%;
+  main section .content .right_content {
+    width: 50%;
     height: inherit;
-    background: transparent;
+    background: white;
+    padding-top: 50px;
   }
-  main section .contentDiv .rightDiv .starElements {
-    width: 370px;
-    height: 33px;
+  main section .content .right_content .star_elements {
+    width: 450px;
+    height: 50px;
     background: rgba(221, 221, 221, 0.315);
-    border-radius: 4px;
+    border-radius: 5px;
     margin-top: 15px;
     margin-left: 60px;
+    font-size: 20px;
   }
-  main section .contentDiv .rightDiv .starElements i {
-    margin-top: 5px;
+  main section .content .right_content .star_elements i {
+    margin-top: 15px;
     color: rgba(255, 145, 0, 0.704);
   }
-  main section .contentDiv .rightDiv .starElements #star {
+  main section .content .right_content .star_elements #star {
     margin-left: 20px;
   }
-  main section .contentDiv .rightDiv .starElements span {
+  main section .content .right_content .star_elements span {
     font-family: "Outfit", sans-serif;
     margin-left: 20px;
-    color: #430156f6;
+    color: rgba(67, 1, 86, 0.9647058824);
     font-weight: 600;
-    font-size: 15px;
+    font-size: 20px;
   }
-  main section .contentDiv .rightDiv #starElementsOne {
-    margin-top: 40px;
+  main section .content .right_content #star_element_one {
+    margin-top: 80px;
   }
-  main section .contentDiv .rightDiv #starElementsTwo {
+  main section .content .right_content #star_element_two {
     margin-left: 100px;
   }
-  main section .contentDiv .rightDiv #starElementsThree {
+  main section .content .right_content #star_element_three {
     margin-left: 140px;
   }
-  main section .profileDiv {
+  main section .profiles {
     width: 100%;
     height: 45vh;
     background: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     font-family: "Outfit", sans-serif;
   }
-  main section .profileDiv .profileBox {
-    width: 280px;
+  main section .profiles .profile_box {
+    width: 450px;
     height: 250px;
-    background: #3e0041f6;
-    margin-left: 20px;
+    background: rgba(62, 0, 65, 0.9647058824);
+    margin-left: 40px;
     border-radius: 8px;
+    margin-top: 100px;
   }
-  main section .profileDiv .profileBox:hover {
+  main section .profiles .profile_box:hover {
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
-    -webkit-animation-name: boxOne;
-            animation-name: boxOne;
+    -webkit-animation-name: box_one;
+            animation-name: box_one;
     -webkit-animation-iteration-count: 20;
             animation-iteration-count: 20;
     -webkit-animation-direction: alternate;
             animation-direction: alternate;
   }
-  @-webkit-keyframes boxOne {
+  @-webkit-keyframes box_one {
     from {
       margin-top: -2%;
     }
   }
-  @keyframes boxOne {
+  @keyframes box_one {
     from {
       margin-top: -2%;
     }
   }
-  main section .profileDiv .profileBox .profileName {
+  main section .profiles .profile_box .profile_infos {
     width: 80%;
     height: 20px;
     margin: 20px auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
-  main section .profileDiv .profileBox .profileName .profilePic {
+  main section .profiles .profile_box .profile_infos .profile_picture {
     width: 30px;
     height: 30px;
     border: 2px solid black;
     border-radius: 50%;
   }
-  main section .profileDiv .profileBox .profileName .names {
+  main section .profiles .profile_box .profile_infos .profile_details {
     font-size: 20px;
     margin-left: 15px;
     line-height: 19px;
   }
-  main section .profileDiv .profileBox .profileName .names .verified {
-    color: #a903a6be;
-  }
-  main section .profileDiv .profileBox .profileName .names .name {
+  main section .profiles .profile_box .profile_infos .profile_details .profile_name {
     color: white;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
   }
-  main section .profileDiv .profileBox .profileName #picOne {
-    background-image: url(/Images/Man.jpg);
+  main section .profiles .profile_box .profile_infos .profile_details .profile_status {
+    color: rgba(169, 3, 166, 0.7450980392);
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  main section .profiles .profile_box .profile_infos #profile_picture_one {
+    background-image: url(../images/Man.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 60px;
+    height: 60px;
   }
-  main section .profileDiv .profileBox .profileName #picTwo {
-    background-image: url(/Images/firstWoman.jpg);
+  main section .profiles .profile_box .profile_infos #profile_picture_two {
+    background-image: url(../images/firstWoman.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 60px;
+    height: 60px;
   }
-  main section .profileDiv .profileBox .profileName #picThree {
-    background-image: url(/Images/secondWoman.jpg);
+  main section .profiles .profile_box .profile_infos #profile_picture_three {
+    background-image: url(../images/secondWoman.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 60px;
+    height: 60px;
   }
-  main section .profileDiv .profileBox .textDiv {
-    margin: 40px auto auto 20px;
+  main section .profiles .profile_box .profile_description {
+    margin: 40px auto auto 40px;
   }
-  main section .profileDiv .profileBox .textDiv p {
+  main section .profiles .profile_box .profile_description p {
     color: white;
-    width: 220px;
-    font-size: 14px;
+    width: 90%;
+    font-size: 20px;
+    margin-top: 70px;
   }
-  main section .profileDiv #boxOne {
+  main section .profiles #box_one {
     margin-left: 0;
+    margin-top: 150px;
   }
-  main section .profileDiv #boxTwo {
-    margin-top: 20px;
+  main section .profiles #box_two {
+    margin-top: 170px;
   }
-  main section .profileDiv #boxThree {
-    margin-top: 40px;
+  main section .profiles #box_three {
+    margin-top: 190px;
   }
 }
-
 @media (max-width: 900px) {
   main {
     width: 80vw;
@@ -374,40 +368,41 @@ main section .profileDiv #boxThree {
     background: white;
     margin: 15px auto;
   }
-  main section .contentDiv {
+  main section .content {
     width: 100%;
     height: 45vh;
     background: white;
     display: block;
   }
-  main section .contentDiv .leftDiv {
+  main section .content .left_content {
     width: 40%;
     height: inherit;
     background: white;
   }
-  main section .contentDiv .leftDiv h1 {
+  main section .content .left_content h1 {
     font-weight: 600;
     font-family: "Outfit", sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     width: 450px;
     line-height: 50px;
-    color: #570064fa;
+    color: rgba(87, 0, 100, 0.9803921569);
     margin-top: 30px;
   }
-  main section .contentDiv .leftDiv p {
+  main section .content .left_content p {
     font-family: "Outfit", sans-serif;
     font-weight: 200;
     width: 430px;
-    color: #430156f6;
+    color: rgba(67, 1, 86, 0.9647058824);
     margin-top: 20px;
+    font-size: 10px;
   }
-  main section .contentDiv .rightDiv {
+  main section .content .right_content {
     width: 10%;
     height: inherit;
     background: transparent;
     margin-left: 0px;
   }
-  main section .contentDiv .rightDiv .starElements {
+  main section .content .right_content .star_elements {
     width: 560px;
     height: 50px;
     background: rgba(221, 221, 221, 0.315);
@@ -415,287 +410,287 @@ main section .profileDiv #boxThree {
     margin-top: 15px;
     margin-left: 70px;
   }
-  main section .contentDiv .rightDiv .starElements i {
+  main section .content .right_content .star_elements i {
     margin-top: 10px;
     color: rgba(255, 145, 0, 0.704);
   }
-  main section .contentDiv .rightDiv .starElements #star {
+  main section .content .right_content .star_elements #star {
     margin-left: 50px;
   }
-  main section .contentDiv .rightDiv .starElements span {
+  main section .content .right_content .star_elements span {
     font-family: "Outfit", sans-serif;
     margin-left: 60px;
-    color: #430156f6;
+    color: rgba(67, 1, 86, 0.9647058824);
     font-weight: 600;
     font-size: 15px;
   }
-  main section .contentDiv .rightDiv #starElementsOne {
+  main section .content .right_content #star_element_one {
     margin-top: 40px;
     margin-left: 10px;
   }
-  main section .contentDiv .rightDiv #starElementsTwo {
+  main section .content .right_content #star_element_two {
     margin-left: 10px;
   }
-  main section .contentDiv .rightDiv #starElementsThree {
+  main section .content .right_content #star_element_three {
     margin-left: 10px;
   }
-  main section .profileDiv {
+  main section .profiles {
     width: 100%;
     height: 45vh;
     background: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     font-family: "Outfit", sans-serif;
     margin-top: 20rem;
   }
-  main section .profileDiv .profileBox {
+  main section .profiles .profile_box {
     width: 280px;
     height: 250px;
-    background: #3e0041f6;
+    background: rgba(62, 0, 65, 0.9647058824);
     margin-left: 20px;
     border-radius: 8px;
   }
-  main section .profileDiv .profileBox:hover {
+  main section .profiles .profile_box:hover {
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
-    -webkit-animation-name: boxOne;
-            animation-name: boxOne;
+    -webkit-animation-name: box_one;
+            animation-name: box_one;
     -webkit-animation-iteration-count: 20;
             animation-iteration-count: 20;
     -webkit-animation-direction: alternate;
             animation-direction: alternate;
   }
-  @-webkit-keyframes boxOne {
+  @-webkit-keyframes box_one {
     from {
       margin-top: -2%;
     }
   }
-  @keyframes boxOne {
+  @keyframes box_one {
     from {
       margin-top: -2%;
     }
   }
-  main section .profileDiv .profileBox .profileName {
+  main section .profiles .profile_box .profile_infos {
     width: 80%;
     height: 20px;
     margin: 20px auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
-  main section .profileDiv .profileBox .profileName .profilePic {
+  main section .profiles .profile_box .profile_infos .profile_picture {
     width: 30px;
     height: 30px;
     border: 2px solid black;
     border-radius: 50%;
   }
-  main section .profileDiv .profileBox .profileName .names {
+  main section .profiles .profile_box .profile_infos .profile_details {
     font-size: 20px;
     margin-left: 15px;
     line-height: 19px;
   }
-  main section .profileDiv .profileBox .profileName .names .verified {
-    color: #a903a6be;
+  main section .profiles .profile_box .profile_infos .profile_details .profile_status {
+    color: rgba(169, 3, 166, 0.7450980392);
   }
-  main section .profileDiv .profileBox .profileName .names .name {
+  main section .profiles .profile_box .profile_infos .profile_details .profile_name {
     color: white;
   }
-  main section .profileDiv .profileBox .profileName #picOne {
+  main section .profiles .profile_box .profile_infos #profile_picture_one {
     background-image: url(/Images/Man.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 60px;
+    height: 60px;
   }
-  main section .profileDiv .profileBox .profileName #picTwo {
+  main section .profiles .profile_box .profile_infos #profile_picture_two {
     background-image: url(/Images/firstWoman.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 60px;
+    height: 60px;
   }
-  main section .profileDiv .profileBox .profileName #picThree {
+  main section .profiles .profile_box .profile_infos #profile_picture_three {
     background-image: url(/Images/secondWoman.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 60px;
+    height: 60px;
   }
-  main section .profileDiv .profileBox .textDiv {
+  main section .profiles .profile_box .profile_description {
     margin: 40px auto auto 20px;
   }
-  main section .profileDiv .profileBox .textDiv p {
+  main section .profiles .profile_box .profile_description p {
     color: white;
     width: 220px;
     font-size: 14px;
   }
-  main section .profileDiv #boxOne {
+  main section .profiles #box_one {
     margin-left: 40px;
   }
-  main section .profileDiv #boxTwo {
+  main section .profiles #box_two {
     margin-top: 0px;
   }
-  main section .profileDiv #boxThree {
+  main section .profiles #box_three {
     margin-top: 20rem;
     margin-left: -27rem;
   }
 }
-
 @media (max-width: 576px) {
   main {
     width: 100%;
     height: 90vh;
     background: white;
   }
-  main section .contentDiv {
+  main section .content {
     width: 100%;
     height: 30vh;
     background: white;
     display: block;
   }
-  main section .contentDiv .leftDiv {
+  main section .content .left_content {
     width: 100%;
     height: inherit;
     background: white;
     margin-top: 100px;
   }
-  main section .contentDiv .leftDiv h1 {
+  main section .content .left_content h1 {
     font-weight: 600;
     font-family: "Outfit", sans-serif;
     font-size: 35px;
     text-align: center;
     width: 100%;
     line-height: 30px;
-    color: #570064fa;
+    color: rgba(87, 0, 100, 0.9803921569);
   }
-  main section .contentDiv .leftDiv p {
+  main section .content .left_content p {
     text-align: center;
     font-family: "Outfit", sans-serif;
     font-weight: 200;
     width: 100%;
     font-size: 20px;
-    color: #430156f6;
+    color: rgba(67, 1, 86, 0.9647058824);
     margin-left: 0px;
   }
-  main section .contentDiv .leftDiv #para {
+  main section .content .left_content #description_paragraph {
     margin-top: 30px;
   }
-  main section .contentDiv .rightDiv {
+  main section .content .right_content {
     width: 100%;
     height: inherit;
     background: white;
   }
-  main section .contentDiv .rightDiv .starElements {
+  main section .content .right_content .star_elements {
     width: 90%;
     height: 33px;
     background: rgba(221, 221, 221, 0.315);
     border-radius: 4px;
     margin-top: 20px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     padding: 10px;
   }
-  main section .contentDiv .rightDiv .starElements i {
+  main section .content .right_content .star_elements i {
     margin-top: 5px;
     color: rgba(255, 145, 0, 0.704);
     margin-left: 5px;
   }
-  main section .contentDiv .rightDiv .starElements #star {
+  main section .content .right_content .star_elements #star {
     margin-left: 0px;
   }
-  main section .contentDiv .rightDiv .starElements span {
+  main section .content .right_content .star_elements span {
     font-family: "Outfit", sans-serif;
     margin-left: 15px;
-    color: #430156f6;
+    color: rgba(67, 1, 86, 0.9647058824);
     font-weight: 600;
     font-size: 15px;
   }
-  main section .contentDiv .rightDiv #starElementsOne {
+  main section .content .right_content #star_element_one {
     margin-top: 20px;
     margin-left: 10px;
   }
-  main section .contentDiv .rightDiv #starElementsTwo {
+  main section .content .right_content #star_element_two {
     margin-left: 10px;
   }
-  main section .contentDiv .rightDiv #starElementsThree {
+  main section .content .right_content #star_element_three {
     margin-left: 10px;
   }
-  main section .profileDiv {
+  main section .profiles {
     width: 100%;
     height: 45vh;
     background: white;
     display: block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     margin-left: 0px;
     font-family: "Outfit", sans-serif;
   }
-  main section .profileDiv .profileBox {
+  main section .profiles .profile_box {
     width: 330px;
     height: 200px;
-    background: #3e0041f6;
+    background: rgba(62, 0, 65, 0.9647058824);
     border-radius: 8px;
   }
-  main section .profileDiv .profileBox .profileName {
+  main section .profiles .profile_box .profile_infos {
     width: 80%;
     height: 20px;
     margin: 20px auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
-  main section .profileDiv .profileBox .profileName .profilePic {
+  main section .profiles .profile_box .profile_infos .profile_picture {
     width: 30px;
     height: 30px;
     border: 2px solid black;
     border-radius: 50%;
   }
-  main section .profileDiv .profileBox .profileName .names {
+  main section .profiles .profile_box .profile_infos .profile_details {
     font-size: 20px;
     margin-left: 15px;
     line-height: 19px;
     margin-top: 20px;
   }
-  main section .profileDiv .profileBox .profileName .names .verified {
-    color: #a903a6be;
+  main section .profiles .profile_box .profile_infos .profile_details .profile_status {
+    color: rgba(169, 3, 166, 0.7450980392);
   }
-  main section .profileDiv .profileBox .profileName .names .name {
+  main section .profiles .profile_box .profile_infos .profile_details .profile_name {
     color: white;
   }
-  main section .profileDiv .profileBox .profileName #picOne {
+  main section .profiles .profile_box .profile_infos #profile_picture_one {
     background-image: url(/Images/Man.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 60px;
+    height: 60px;
     margin-top: 20px;
   }
-  main section .profileDiv .profileBox .profileName #picTwo {
+  main section .profiles .profile_box .profile_infos #profile_picture_two {
     background-image: url(/Images/firstWoman.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 60px;
+    height: 60px;
     margin-top: 20px;
   }
-  main section .profileDiv .profileBox .profileName #picThree {
+  main section .profiles .profile_box .profile_infos #profile_picture_three {
     background-image: url(/Images/secondWoman.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 60px;
+    height: 60px;
     margin-top: 20px;
   }
-  main section .profileDiv .profileBox .textDiv {
+  main section .profiles .profile_box .profile_description {
     margin: 50px auto auto 40px;
   }
-  main section .profileDiv .profileBox .textDiv p {
+  main section .profiles .profile_box .profile_description p {
     color: white;
     width: 260px;
     font-size: 14px;
   }
-  main section .profileDiv #boxOne {
+  main section .profiles #box_one {
     margin-top: 20rem;
     margin-left: 30px;
   }
-  main section .profileDiv #boxTwo {
+  main section .profiles #box_two {
     margin-top: 20px;
     margin-left: 30px;
   }
-  main section .profileDiv #boxThree {
+  main section .profiles #box_three {
     margin-top: 20px;
     margin-left: 30px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

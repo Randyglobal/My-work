@@ -1,191 +1,176 @@
 main {
-    //including the mixin
-    @include leftRightElements (80vw, 90vh, white);
+  @include leftRightElements(80%, 90vh, white);
+  margin-left: 12%;
 
-    margin: 25px auto;
+  section {
+    .content {
+      @include leftRightElements(100%, 45vh, white);
+      display: flex;
 
-    section {
-        .contentDiv {
-    //including the mixin
+      .left_content {
+        @include leftRightElements(50%, inherit, white);
+        padding-top: 50px;
 
-            @include leftRightElements (100%, 45vh, white);
-            //placing the elements inline with display: flex;
-            display: flex;
-
-            .leftDiv {
-                @include leftRightElements (50%, inherit, white);
-
-                h1 {
-                    font-weight: $headingFontWeight;
-                    font-family: $paragraphFontFamily;
-                    font-size: 50px;
-                    width: 450px;
-                    line-height: 50px;
-                    color: $headingColor;
-                    margin-top: 30px;
-                }
-
-                p {
-                    font-family: $paragraphFontFamily;
-                    font-weight: $firstParagraphFontWeight;
-                    width: 430px;
-                    color: $firstTextColor;
-                    margin-top: 20px;
-
-                }
-            }
-
-            .rightDiv {
-                @include leftRightElements (50%, inherit, white);
-
-                .starElements {
-                    @include leftRightElements (370px, 33px, $starDivColor);
-                    border-radius: 4px;
-                    margin-top: 15px;
-                    margin-left: 60px;
-
-                    i {
-                        margin-top: 5px;
-                        color: $starColor;
-                    }
-
-                    #star {
-                        margin-left: 20px;
-                    }
-
-                    span {
-                        font-family: $paragraphFontFamily;
-                        margin-left: 20px;
-                        color: $firstTextColor;
-                        font-weight: 600;
-                        font-size: 15px;
-
-                    }
-
-                }
-
-                #starElementsOne {
-                    margin-top: 40px;
-                }
-
-                #starElementsTwo {
-                    margin-left: 100px;
-                }
-
-                #starElementsThree {
-                    margin-left: 140px;
-                }
-
-            }
+        h1 {
+          font-weight: $fontWeight600;
+          font-family: $fontFamilies;
+          font-size: 100px;
+          width: 90%;
+          line-height: 90px;
+          color: $headingColor;
+          margin-top: 30px;
         }
-    }
 
-    section {
-        .profileDiv {
-            @include leftRightElements (100%, 45vh, white);
-            display: flex;
-            font-family: $paragraphFontFamily;
-
-            .profileBox {
-                @include leftRightElements (330px, 200px, $underDivColor);
-                margin-left: 40px;
-                border-radius: 8px;
-
-                &:hover {
-                    
-                    animation-duration: 1s;
-                    animation-name: boxOne;
-                    animation-iteration-count: 20;
-                    animation-direction: alternate;
-                }
-
-                @keyframes boxOne {
-                    from {
-                        margin-top: -2%;
-                        
-                    }
-                
-                    // to {
-                    //     margin-top: 0%;
-                        
-                    // }
-            }
-
-                .profileName {
-                    width: 80%;
-                    height: 20px;
-                    margin: 20px auto;
-                    display: flex;
-
-                    // justify-content: space-evenly;
-
-                    .profilePic {
-                        width: 30px;
-                        height: 30px;
-                        border: 2px solid black;
-                        border-radius: 50%;
-                    }
-
-                    .names {
-                        font-size: 20px;
-                        margin-left: 15px;
-                        line-height: 19px;
-
-
-                        .verified {
-                            color: $h6Color;
-                        }
-
-                        .name {
-                            color: $paragraphColor;
-                        }
-
-                    }
-
-
-
-                    #picOne {
-                        background-image: url(/Images/Man.jpg);
-                        @include imageStyle;
-
-                    }
-
-                    #picTwo {
-                        background-image: url(/Images/firstWoman.jpg);
-                        @include imageStyle;
-
-                    }
-
-                    #picThree {
-                        background-image: url(/Images/secondWoman.jpg);
-                        @include imageStyle;
-                    }
-                }
-
-                .textDiv {
-                    margin: 40px auto auto 40px;
-
-                    p {
-                        color: $paragraphColor;
-                        width: 260px;
-                        font-size: 14px;
-
-                    }
-                }
-
-            }
-
-            #boxOne {
-                margin-left: 0;
-            }
-
-            #boxTwo {
-                margin-top: 20px;
-            }
-
-            #boxThree {
-                margin-top: 40px;
-            }
+        p {
+          font-family: $fontFamilies;
+          font-weight: $fontWeight200;
+          width: 90%;
+          color: $firstTextColor;
+          font-size: 28px;
+          margin-top: 50px;
         }
+      }
+
+      .right_content {
+        @include leftRightElements(50%, inherit, white);
+        padding-top: 50px;
+        .star_elements {
+          @include leftRightElements(450px, 50px, $starDivColor);
+          border-radius: 5px;
+          margin-top: 15px;
+          margin-left: 60px;
+          font-size: 20px;
+
+          i {
+            margin-top: 15px;
+            color: $starColor;
+          }
+
+          #star {
+            margin-left: 20px;
+          }
+
+          span {
+            font-family: $fontFamilies;
+            margin-left: 20px;
+            color: $firstTextColor;
+            font-weight: 600;
+            font-size: 20px;
+          }
+        }
+
+        #star_element_one {
+          margin-top: 80px;
+        }
+
+        #star_element_two {
+          margin-left: 100px;
+        }
+
+        #star_element_three {
+          margin-left: 140px;
+        }
+      }
     }
+  }
+
+  section {
+    .profiles {
+      @include leftRightElements(100%, 45vh, white);
+      display: flex;
+      font-family: $fontFamilies;
+
+      .profile_box {
+        @include leftRightElements(450px, 250px, $divColor);
+        margin-left: 40px;
+        border-radius: 8px;
+        margin-top: 100px;
+
+        &:hover {
+          animation-duration: 1s;
+          animation-name: box_one;
+          animation-iteration-count: 20;
+          animation-direction: alternate;
+        }
+
+        @keyframes box_one {
+          from {
+            margin-top: -2%;
+          }
+        }
+
+        .profile_infos {
+          width: 80%;
+          height: 20px;
+          margin: 20px auto;
+          display: flex;
+          .profile_picture {
+            width: 30px;
+            height: 30px;
+            border: 2px solid black;
+            border-radius: 50%;
+          }
+
+          .profile_details {
+            font-size: 20px;
+            margin-left: 15px;
+            line-height: 19px;
+
+            .profile_name {
+              color: $paragraphColor;
+              font-size: 25px;
+              margin-top: 10px;
+              margin-left: 10px;
+            }
+
+            .profile_status {
+              color: $h6Color;
+              font-size: 20px;
+              margin-top: 15px;
+              margin-left: 10px;
+            }
+          }
+
+          #profile_picture_one {
+            background-image: url(../images/Man.jpg);
+            @include imageStyle;
+          }
+
+          #profile_picture_two {
+            background-image: url(../images/firstWoman.jpg);
+            @include imageStyle;
+          }
+
+          #profile_picture_three {
+            background-image: url(../images/secondWoman.jpg);
+            @include imageStyle;
+          }
+        }
+
+        .profile_description {
+          margin: 40px auto auto 40px;
+
+          p {
+            color: $paragraphColor;
+            width: 90%;
+            font-size: 20px;
+            margin-top: 70px;
+          }
+        }
+      }
+
+      #box_one {
+        margin-left: 0;
+        margin-top: 150px;
+      }
+
+      #box_two {
+        margin-top: 170px;
+      }
+
+      #box_three {
+        margin-top: 190px;
+      }
+    }
+  }
 }
